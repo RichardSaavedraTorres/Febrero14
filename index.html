@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi niña hermosa</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            background-image: url('amor.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 204, 213, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #d24d57;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        /* 🔹 Contenedor de la imagen con efecto */
+        .heart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .heart img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        /* 🔹 Efecto al pasar el cursor */
+        .heart:hover img {
+            transform: scale(1.05); /* Agranda la imagen un poco */
+            filter: brightness(1.2); /* Agrega reflejo */
+            content: url('jinx2.gif'); /* Cambia la imagen */
+        }
+
+        /* 🔹 Estilo para el botón */
+        .btn {
+            background-color: #d24d57;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* 🔹 Efecto al pasar el cursor sobre el botón */
+        .btn:hover {
+            background-color: #b8434b;  /* Color de fondo más oscuro */
+            transform: scale(1.1);  /* Aumenta el tamaño ligeramente */
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);  /* Sombra para efecto de elevación */
+        }
+
+        /* 🔹 Estilos responsive para móviles */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <p>Este 14 de febrero quiero que sea un día especial a tu lado, mi vida. Amo cada momento contigo
+             y deseo compartir mi vida a tu lado. Quiero que cada sonrisa, cada baile y cada instante especial sea contigo.</p>
+        <div class="heart">
+            <img src="jinx.jpg" alt="Imagen de amor">
+        </div>
+        <p>Si quieres ser mi San Valentín, presiona el botón uwu:</p>
+        <button class="btn" onclick="confirmarSanValentin()">
+            ¡Sí, quiero ser tu San Valentín!
+        </button>
+    </div>
+
+    <script>
+        function confirmarSanValentin() {
+            var email = "tu-correo@ejemplo.com";
+            var asunto = "Sí, quiero ser tu San Valentín";
+            var cuerpo = "¡Sí! Estoy emocionada/o!";
+            
+            // Redirige a un correo electrónico
+
+            // Espera un poco antes de redirigir a YouTube
+            setTimeout(function() {
+                window.location.href = 'https://www.youtube.com/watch?v=-BjZmE2gtdo';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
